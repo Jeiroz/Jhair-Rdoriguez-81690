@@ -1,0 +1,35 @@
+class Main {
+    public static void main(String[] args) {
+        // Creación de objetos con valores predefinidos
+        Coche coche1 = new Coche("Toyota", "Corolla", 2020);
+        Coche coche2 = new Coche("Honda", "Civic", 2019);
+        
+        // Llamada a los métodos
+        System.out.println("\nInformación del primer coche:");
+        coche1.mostrarInformacion();
+        
+        System.out.println("\nInformación del segundo coche:");
+        coche2.mostrarInformacion();
+    }
+}
+
+class Coche {
+    // Atributos
+    private String marca;
+    private String modelo;
+    private int anio;
+
+    // Constructor
+    public Coche(String marca, String modelo, int anio) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anio = anio;
+    }
+
+    // Método para obtener la información del coche
+    public void mostrarInformacion() {
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Año: " + anio);
+    }
+}
